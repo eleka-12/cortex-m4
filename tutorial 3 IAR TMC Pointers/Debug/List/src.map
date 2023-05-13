@@ -1,0 +1,181 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.1.245/W32 for ARM                  13/May/2023  09:51:01
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =  D:\embedded\tutorial 3 IAR TMC Pointers\Debug\Exe\src.out
+#    Map file     =  D:\embedded\tutorial 3 IAR TMC Pointers\Debug\List\src.map
+#    Command line =
+#        -f C:\Users\elcot\AppData\Local\Temp\EW96AF.tmp ("D:\embedded\tutorial
+#        3 IAR TMC Pointers\Debug\Obj\main.o" --no_out_extension -o
+#        "D:\embedded\tutorial 3 IAR TMC Pointers\Debug\Exe\src.out" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        "D:\embedded\tutorial 3 IAR TMC Pointers\Debug\List\src.map" --config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.4\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+
+  Section          Kind         Address   Size  Object
+  -------          ----         -------   ----  ------
+"A0":                                     0x40
+  .intvec          ro code          0x0   0x40  vector_table_M.o [3]
+                                 - 0x40   0x40
+
+"P1":                                     0xd8
+  .text            ro code         0x40   0x3a  zero_init3.o [3]
+  .text            ro code         0x7a    0x2  vector_table_M.o [3]
+  .text            ro code         0x7c   0x28  data_init.o [3]
+  .iar.init_table  const           0xa4   0x10  - Linker created -
+  .text            ro code         0xb4   0x1e  cmain.o [3]
+  .text            ro code         0xd2    0x4  low_level_init.o [2]
+  .text            ro code         0xd8   0x10  main.o [1]
+  .text            ro code         0xe8    0x4  exit.o [2]
+  .text            ro code         0xec    0xa  cexit.o [3]
+  .text            ro code         0xf8   0x14  exit.o [4]
+  .text            ro code        0x10c    0xc  cstartup_M.o [3]
+  .rodata          const          0x118    0x0  zero_init3.o [3]
+                                - 0x118   0xd8
+
+"P2", part 1 of 2:                         0x4
+  .bss             zero     0x2000'0000    0x4  main.o [1]
+                          - 0x2000'0004    0x4
+
+"P2", part 2 of 2:                       0x400
+  CSTACK                    0x2000'0008  0x400  <Block>
+    CSTACK         uninit   0x2000'0008  0x400  <Block tail>
+                          - 0x2000'0408  0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x118     0x7'ffff  0x7'fee8
+  0x2000'0004  0x2000'0007       0x4
+  0x2000'0408  0x2000'ffff    0xfbf8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4:
+          0x2000'0000   0x4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+D:\embedded\tutorial 3 IAR TMC Pointers\Debug\Obj: [1]
+    main.o                 16                 4
+    -------------------------------------------
+    Total:                 16                 4
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+rt7M_tl.a: [3]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           12
+    data_init.o            40
+    vector_table_M.o       66
+    zero_init3.o           58
+    -------------------------------------------
+    Total:                216
+
+shb_l.a: [4]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    4
+    Linker created                  16    1'024
+-----------------------------------------------
+    Grand Total:          264       16    1'028
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base          0xa4         --   Gb  - Linker created -
+.iar.init_table$$Limit         0xb4         --   Gb  - Linker created -
+?main                          0xb5        Code  Gb  cmain.o [3]
+CSTACK$$Base            0x2000'0008         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0408         --   Gb  - Linker created -
+Region$$Table$$Base            0xa4         --   Gb  - Linker created -
+Region$$Table$$Limit           0xb4         --   Gb  - Linker created -
+__cmain                        0xb5        Code  Gb  cmain.o [3]
+__exit                         0xf9  0x14  Code  Gb  exit.o [4]
+__iar_data_init3               0x7d  0x28  Code  Gb  data_init.o [3]
+__iar_program_start           0x10d        Code  Gb  cstartup_M.o [3]
+__iar_zero_init3               0x41  0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init               0xd3   0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0        Data  Gb  vector_table_M.o [3]
+_call_main                     0xc1        Code  Gb  cmain.o [3]
+_exit                          0xed        Code  Gb  cexit.o [3]
+_main                          0xcf        Code  Gb  cmain.o [3]
+counter                 0x2000'0000   0x4  Data  Gb  main.o [1]
+exit                           0xe9   0x4  Code  Gb  exit.o [2]
+main                           0xd9  0x10  Code  Gb  main.o [1]
+
+
+[1] = D:\embedded\tutorial 3 IAR TMC Pointers\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+    264 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  1'028 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
