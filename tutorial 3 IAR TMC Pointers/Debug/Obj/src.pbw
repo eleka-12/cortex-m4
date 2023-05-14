@@ -2,7 +2,7 @@
   {
     "ID": "c:@counter",
     "What": "Variable",
-    "defdec": "Dec",
+    "defdec": "Def",
     "display": "counter",
     "location": {
       "column": "5",
@@ -24,6 +24,20 @@
       "path": "D:\\embedded\\tutorial 3 IAR TMC Pointers\\main.c"
     },
     "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@37@F@main@p_int",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_int",
+    "location": {
+      "column": "8",
+      "line": "4",
+      "path": "D:\\embedded\\tutorial 3 IAR TMC Pointers\\main.c"
+    },
+    "name": "p_int",
     "origin": "project_file",
     "scope": null
   }
