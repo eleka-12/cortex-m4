@@ -1,0 +1,30 @@
+[
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "2",
+      "path": "D:\\embedded\\tutorial 2 IAR TM4C non linear flow\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@19@F@main@val",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "val",
+    "location": {
+      "column": "7",
+      "line": "4",
+      "path": "D:\\embedded\\tutorial 2 IAR TM4C non linear flow\\main.c"
+    },
+    "name": "val",
+    "origin": "project_file",
+    "scope": null
+  }
+]

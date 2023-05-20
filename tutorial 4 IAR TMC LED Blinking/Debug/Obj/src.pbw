@@ -1,0 +1,44 @@
+[
+  {
+    "ID": "c:@F@delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay(int)",
+    "location": {
+      "column": "8",
+      "line": "1",
+      "path": "D:\\embedded\\tutorial 4 IAR TMC LED Blinking\\main.c"
+    },
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@30@F@delay@start",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "start",
+    "location": {
+      "column": "11",
+      "line": "2",
+      "path": "D:\\embedded\\tutorial 4 IAR TMC LED Blinking\\main.c"
+    },
+    "name": "start",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "8",
+      "path": "D:\\embedded\\tutorial 4 IAR TMC LED Blinking\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  }
+]
