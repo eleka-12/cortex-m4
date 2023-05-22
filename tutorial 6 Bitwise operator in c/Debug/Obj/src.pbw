@@ -73780,30 +73780,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@63@macro@GREEN_LED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GREEN_LED",
-    "location": {
-      "column": "9",
-      "line": "4",
-      "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
-    },
-    "name": "GREEN_LED",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@92@macro@BLUE_LED",
+    "ID": "c:main.c@63@macro@BLUE_LED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "BLUE_LED",
     "location": {
       "column": "9",
-      "line": "5",
+      "line": "4",
       "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
     },
     "name": "BLUE_LED",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@91@macro@GREEN_LED",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GREEN_LED",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
+    },
+    "name": "GREEN_LED",
     "origin": "project_file",
     "scope": null
   },
@@ -73864,72 +73864,30 @@
     "scope": null
   },
   {
+    "ID": "c:@F@clearLEDColor",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void clearLEDColor(int, int)",
+    "location": {
+      "column": "6",
+      "line": "25",
+      "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
+    },
+    "name": "clearLEDColor",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@main",
     "What": "Function",
     "defdec": "Def",
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "25",
+      "line": "30",
       "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
     },
     "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@674@F@main@a",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "a",
-    "location": {
-      "column": "18",
-      "line": "27",
-      "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
-    },
-    "name": "a",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@708@F@main@b",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "b",
-    "location": {
-      "column": "18",
-      "line": "28",
-      "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
-    },
-    "name": "b",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@742@F@main@c",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "c",
-    "location": {
-      "column": "18",
-      "line": "29",
-      "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
-    },
-    "name": "c",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@850@F@main@d",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "d",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "D:\\embedded\\tutorial 6 Bitwise operator in c\\main.c"
-    },
-    "name": "d",
     "origin": "project_file",
     "scope": null
   }

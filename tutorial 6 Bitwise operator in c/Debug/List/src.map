@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.1.245/W32 for ARM                  22/May/2023  22:31:06
+# IAR ELF Linker V8.50.1.245/W32 for ARM                  22/May/2023  23:11:59
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
@@ -8,7 +8,7 @@
 #    Map file     =
 #        D:\embedded\tutorial 6 Bitwise operator in c\Debug\List\src.map
 #    Command line =
-#        -f C:\Users\elcot\AppData\Local\Temp\EW3AC6.tmp ("D:\embedded\tutorial
+#        -f C:\Users\elcot\AppData\Local\Temp\EWA8F6.tmp ("D:\embedded\tutorial
 #        6 Bitwise operator in c\Debug\Obj\main.o" --no_out_extension -o
 #        "D:\embedded\tutorial 6 Bitwise operator in c\Debug\Exe\src.out"
 #        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
@@ -151,10 +151,11 @@ __vector_table                0x0        Data  Gb  vector_table_M.o [4]
 _call_main                   0xe9        Code  Gb  cmain.o [4]
 _exit                       0x105        Code  Gb  cexit.o [4]
 _main                        0xf7        Code  Gb  cmain.o [4]
+clearLEDColor                0x71  0x12  Code  Gb  main.o [1]
 delay                        0x41   0xc  Code  Gb  main.o [1]
 exit                         0xff   0x4  Code  Gb  exit.o [2]
-main                         0x6d  0x2e  Code  Gb  main.o [1]
-setLEDColor                  0x61   0xc  Code  Gb  main.o [1]
+main                         0x83  0x22  Code  Gb  main.o [1]
+setLEDColor                  0x61  0x10  Code  Gb  main.o [1]
 setupPORTF                   0x4d  0x14  Code  Gb  main.o [1]
 
 
